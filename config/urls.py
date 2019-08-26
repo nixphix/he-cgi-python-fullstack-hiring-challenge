@@ -1,9 +1,11 @@
 from django.conf import settings
 from django.urls import include, path, re_path
+from rest_framework.authtoken import views
 
 
 urlpatterns = [
-    path("api/v1/", include("games.urls")), 
+    path("api/v1/", include("games.urls")),
+    path("token/", views.obtain_auth_token),
 ]
 
 if settings.DEBUG:
