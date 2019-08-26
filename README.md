@@ -3,7 +3,7 @@
 
 ### Solution to Django-DRF API Question
 
-   1. To upload the csv place the data in `games-api/data` folder and run management command
+   1. To upload the csv place the data in `data` folder and run management command
       ```python
       python manage.py upload_csv <file_name>
       ```
